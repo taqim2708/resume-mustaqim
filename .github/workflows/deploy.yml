@@ -17,14 +17,14 @@ jobs:
 
       - name: Build Styled HTML
         run: |
-          pandoc resume.md -o index.html \
+          pandoc resume.md -o dist/index.html \
           --standalone \
           --self-contained \
           --css=style.css \
-          --metadata title="Resume - Mustaqim"
+          --metadata title="MUHAMMAD Mustaqim"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .
-          branch: gh-pages
+          folder: dist
+          branch: main
