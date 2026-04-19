@@ -135,3 +135,45 @@ University of Malaya
 
 * Top 20 Students (out of 400+)
 * CGPA: 3.94
+
+
+<a href="resume.pdf" class="download-btn no-print" download>
+  <span class="icon">⬇</span> Download PDF
+</a>
+
+<style>
+  .download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1a2a6c; /* Match your Deep Navy palette */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .download-btn:hover {
+    background-color: #121d4a;
+    transform: translateY(-2px);
+    color: white;
+  }
+
+  .icon {
+    font-size: 1.2em;
+  }
+
+  /* Hide the button when actually printing the page */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>
