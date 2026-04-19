@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Pandoc
-        run: sudo apt-get install -y pandoc
+        run: sudo apt-get install -y pandoc wkhtmltopdf
 
       - name: Build Styled HTML
         run: |
@@ -25,10 +25,12 @@ jobs:
           --embed-resources \
           --css=style.css \
           --metadata title="Muhammad Mustaqim"
+
       - name: Build PDF
         run: |
           pandoc resume.md -o dist/resume.pdf \
-          --pdf-engine=xelatex \
+          --pdf-engine=wkhtmltopdf \
+          --css=style.css \
           --metadata title="Muhammad Mustaqim"
 
       - name: Deploy to GitHub Pages
