@@ -9,6 +9,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -17,9 +19,10 @@ jobs:
 
       - name: Build Styled HTML
         run: |
+          mkdir -p dist
           pandoc resume.md -o dist/index.html \
           --standalone \
-          --self-contained \
+          --embed-resources \
           --css=style.css \
           --metadata title="MUHAMMAD Mustaqim"
 
@@ -27,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
-          branch: main
+          branch: gh-pages  # It is better to keep your built HTML separate from your Markdown
