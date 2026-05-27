@@ -1,6 +1,6 @@
 Alor Gajah, Melaka, Malaysia\
 📞 <a href="https://wa.me/601112891989" target="_blank">**+6011-12891989**</a> | ✉️ <a href="mailto:mus270897@gmail.com" target="_blank">**mus270897@gmail.com**</a> \
-🔗 <a href="https://www.linkedin.com/in/muhammad-mustaqim-samsudin-2b0bb0300" target="_blank">**LinkedIn**</a> | <a href="https://taqim2708.github.io/resume-mustaqim/" target="_blank">**Live Resume**</a>
+🔗 <a href="https://www.linkedin.com/in/muhammad-mustaqim-samsudin-2b0bb0300" target="_blank">**LinkedIn**: https://www.linkedin.com/in/muhammad-mustaqim-samsudin-2b0bb0300</a> | <a href="https://taqim2708.github.io/resume-mustaqim/" target="_blank">**Live Resume**: https://taqim2708.github.io/resume-mustaqim/</a>
 
 
 ---
