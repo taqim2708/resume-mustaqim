@@ -25,8 +25,7 @@ jobs:
           pandoc resume.md -o dist/index.html \
           --standalone \
           --embed-resources \
-          --css=style.css \
-          --metadata title="Muhammad Mustaqim"
+          --css=style.css
 
       - name: Build PDF
         run: |
