@@ -31,8 +31,7 @@ jobs:
         run: |
           pandoc resume.md -o dist/resume.pdf \
           --pdf-engine=wkhtmltopdf \
-          --css=style.css \
-          --metadata title="Muhammad Mustaqim"
+          --css=style.css
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
